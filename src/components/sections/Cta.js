@@ -53,7 +53,7 @@ const Cta = ({
         >
           <div className="cta-slogan">
             <h3 className="m-0">
-              For previewing layouts and visual?
+              Want to stay up-to-date with HPS updates?
               </h3>
           </div>
           <div className="cta-action">

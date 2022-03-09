@@ -61,7 +61,7 @@ const Hero = ({
                     ["I feel like a", "Woman"],
                     ["Think like a", "Fighter"],
                     ["She is a", "Leader"],
-                    ["Do your thing, be", "Successfull"],
+                    ["Do your thing, be", "Successful"],
                     ["Nobody like you,", "Wiser"],
                   ];
   var random1 = Math.floor((Math.random() * (answers.length)));
@@ -87,7 +87,7 @@ const Hero = ({
               <div className="reveal-from-bottom" data-reveal-delay="600">
                 <ButtonGroup>
                   <Button tag="a" color="primary" wideMobile href="#0">
-                    Let's go
+                    Let's Go!
                     </Button>
                   <Button tag="a" color="dark" wideMobile href="https://github.com/HerCodingStory/her_powerStory">
                     View on Github
