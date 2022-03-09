@@ -5,6 +5,8 @@ import ButtonGroup from '../elements/ButtonGroup';
 import Button from '../elements/Button';
 import Image from '../elements/Image';
 import Modal from '../elements/Modal';
+import ReactPlayer from "react-player"
+import YoutubeEmbed from "./YoutubeEmbed";
 
 const propTypes = {
   ...SectionProps.types
@@ -52,6 +54,21 @@ const Hero = ({
     bottomDivider && 'has-bottom-divider'
   );
 
+  const answers = [
+                    ["Darling, you are a", "Queen"],
+                    ["Hello", "Beautiful"],
+                    ["What doesn't kill you makes you", "Stronger"],
+                    ["I feel like a", "Woman"],
+                    ["Think like a", "Fighter"],
+                    ["She is a", "Leader"],
+                    ["Do your thing, be", "Successfull"],
+                    ["Nobody like you,", "Wiser"],
+                  ];
+  var random1 = Math.floor((Math.random() * (answers.length)));
+  var random2 = Math.floor((Math.random() * (answers.length)));
+  const randomTextAnswer1 = answers[random1][0];
+  const randomTextAnswer2 = answers[random2][1];
+
   return (
     <section
       {...props}
@@ -61,18 +78,18 @@ const Hero = ({
         <div className={innerClasses}>
           <div className="hero-content">
             <h1 className="mt-0 mb-16 reveal-from-bottom" data-reveal-delay="200">
-              Darling, you are a <span className="text-color-primary">Queen</span>
+              {randomTextAnswer1} <span className="text-color-primary">{randomTextAnswer2}</span>
             </h1>
             <div className="container-xs">
               <p className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="400">
-                This is the story of a Venezuelan woman, showcasing her life adventures, interest, successes and failures.
+                <span className="text-color-primary">Her Power Story</span> wishes to empower women to tell their own stories, find themselves, take control, and strive for their goals.
                 </p>
               <div className="reveal-from-bottom" data-reveal-delay="600">
                 <ButtonGroup>
-                  <Button tag="a" color="primary" wideMobile href="https://cruip.com/">
-                    Get started
+                  <Button tag="a" color="primary" wideMobile href="#0">
+                    Let's go
                     </Button>
-                  <Button tag="a" color="dark" wideMobile href="https://github.com/cruip/open-react-template/">
+                  <Button tag="a" color="dark" wideMobile href="https://github.com/HerCodingStory/her_powerStory">
                     View on Github
                     </Button>
                 </ButtonGroup>
@@ -80,26 +97,8 @@ const Hero = ({
             </div>
           </div>
           <div className="hero-figure reveal-from-bottom illustration-element-01" data-reveal-value="20px" data-reveal-delay="800">
-            <a
-              data-video="https://player.vimeo.com/video/174002812"
-              href="#0"
-              aria-controls="video-modal"
-              onClick={openModal}
-            >
-              <Image
-                className="has-shadow"
-                src={require('./../../assets/images/video-placeholder.jpg')}
-                alt="Hero"
-                width={896}
-                height={504} />
-            </a>
+            <YoutubeEmbed embedId="COQqd8u4KS0" />
           </div>
-          <Modal
-            id="video-modal"
-            show={videoModalActive}
-            handleClose={closeModal}
-            video="https://player.vimeo.com/video/174002812"
-            videoTag="iframe" />
         </div>
       </div>
     </section>
