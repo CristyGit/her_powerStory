@@ -58,7 +58,7 @@ const FeaturesTiles = ({
           <SectionHeader data={sectionHeader} className="center-content" />
           <div className={tilesClasses}>
             
-          <div className="tiles-item reveal-from-bottom" data-reveal-delay="400">
+          <div className="tiles-item reveal-from-bottom">
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
@@ -80,7 +80,7 @@ const FeaturesTiles = ({
               </div>
             </div>
 
-            <div className="tiles-item reveal-from-bottom">
+            <div className="tiles-item reveal-from-bottom" data-reveal-delay="200">
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
@@ -102,7 +102,7 @@ const FeaturesTiles = ({
               </div>
             </div>
 
-            <div className="tiles-item reveal-from-bottom" data-reveal-delay="200">
+            <div className="tiles-item reveal-from-bottom">
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
@@ -115,7 +115,7 @@ const FeaturesTiles = ({
                 </div>
                 <div className="features-tiles-item-content">
                   <h4 className="mt-0 mb-8">
-                    HerGoal Tracker
+                    HerGoal Keeper
                     </h4>
                   <p className="m-0 text-sm">
                     Goal planner and tracker that helps you keep the motivation going. Setting goals help trigger new behaviors like keeping focus ans momentum in life.
@@ -168,7 +168,7 @@ const FeaturesTiles = ({
               </div>
             </div>
 
-            <div className="tiles-item reveal-from-bottom" data-reveal-delay="400">
+            <div className="tiles-item reveal-from-bottom">
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
@@ -190,7 +190,7 @@ const FeaturesTiles = ({
               </div>
             </div>
 
-            <div className="tiles-item reveal-from-bottom" data-reveal-delay="400">
+            <div className="tiles-item reveal-from-bottom" data-reveal-delay="200">
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
@@ -234,7 +234,7 @@ const FeaturesTiles = ({
               </div>
             </div> */}
 
-            <div className="tiles-item reveal-from-bottom" data-reveal-delay="400">
+            <div className="tiles-item reveal-from-bottom" data-reveal-delay="200">
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
