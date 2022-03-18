@@ -43,7 +43,7 @@ const FooterSocial = ({
           </a>
         </li>
         <li>
-          <a href="https://youtube.com/">
+          <a href="https://www.youtube.com/channel/UCMKIuaoOLkzTm_VuG6hC0bQ">
             <svg
               width="16"
               height="16"

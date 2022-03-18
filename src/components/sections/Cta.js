@@ -3,6 +3,10 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import { SectionProps } from '../../utils/SectionProps';
 import Input from '../elements/Input';
+// import MailchimpSubscribe from "react-mailchimp-subscribe";
+// import CustomForm from "./CustomForm";
+
+const postUrl = `https://genhybridsystems.us1.list-manage.com/subscribe/post?u=${process.env.REACT_APP_MAILCHIMP_U}&id=${process.env.REACT_APP_MAILCHIMP_ID}`;
 
 const propTypes = {
   ...SectionProps.types,
@@ -51,6 +55,18 @@ const Cta = ({
         <div
           className={innerClasses}
         >
+          {/* <div className="mc__form-container">
+            <MailchimpSubscribe
+                url={postUrl}
+                render={({ subscribe, status, message }) => (
+                    <CustomForm
+                        status={status} 
+                        message={message}
+                        onValidated={formData => subscribe(formData)}
+                    />
+                )}
+            />
+        </div> */}
           <div className="cta-slogan">
             <h3 className="m-0">
               Want to stay up-to-date with HPS updates?
