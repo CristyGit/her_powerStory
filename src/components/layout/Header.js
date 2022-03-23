@@ -121,15 +121,6 @@ const Header = ({
                       navPosition && `header-nav-${navPosition}`
                     )}>
                     <li>
-                      <Link to="/Coding" onClick={closeMenu}>Coding</Link>
-                    </li>
-                  </ul>
-                  <ul className={
-                    classNames(
-                      'list-reset text-xs',
-                      navPosition && `header-nav-${navPosition}`
-                    )}>
-                    <li>
                       <Link to="/Money" onClick={closeMenu}>Money</Link>
                     </li>
                   </ul>
@@ -140,6 +131,15 @@ const Header = ({
                     )}>
                     <li>
                       <Link to="/Fitness" onClick={closeMenu}>Fitness</Link>
+                    </li>
+                  </ul>
+                  <ul className={
+                    classNames(
+                      'list-reset text-xs',
+                      navPosition && `header-nav-${navPosition}`
+                    )}>
+                    <li>
+                      <Link to="/Coding" onClick={closeMenu}>Coding</Link>
                     </li>
                   </ul>
                   {!hideSignin &&

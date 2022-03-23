@@ -51,7 +51,7 @@ function AboutHer() {
                         <a href="https://www.youtube.com/channel/UCMKIuaoOLkzTm_VuG6hC0bQ">Youtube</a>
                     </li>
                     <li>
-                        <a href="#"></a>
+                        <a href="#">Discord</a>
                     </li>
                     </ul>
                 </div>
