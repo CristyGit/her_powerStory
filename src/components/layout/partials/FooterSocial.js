@@ -18,7 +18,7 @@ const FooterSocial = ({
     >
       <ul className="list-reset">
         <li>
-          <a href="https://www.instagram.com/her_powerstory/">
+          <a href="https://www.instagram.com/her_powerstory/" target="_blank">
             <svg
               width="16"
               height="16"
@@ -36,7 +36,7 @@ const FooterSocial = ({
           </a>
         </li>
         <li>
-          <a href="https://www.tiktok.com/@herpowerstory">
+          <a href="https://www.tiktok.com/@herpowerstory" target="_blank">
             <svg
               width="16"
               height="16"
@@ -48,7 +48,7 @@ const FooterSocial = ({
           </a>
         </li>
         <li>
-          <a href="https://twitter.com/herpowerstory">
+          <a href="https://twitter.com/herpowerstory" target="_blank">
             <svg
               width="16"
               height="16"
@@ -61,7 +61,7 @@ const FooterSocial = ({
           </a>
         </li>
         <li>
-          <a href="https://www.youtube.com/channel/UCMKIuaoOLkzTm_VuG6hC0bQ">
+          <a href="https://www.youtube.com/channel/UCMKIuaoOLkzTm_VuG6hC0bQ" target="_blank">
             <svg
               width="16"
               height="16"

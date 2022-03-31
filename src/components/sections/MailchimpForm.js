@@ -82,7 +82,7 @@ const CustomForm = ({
                         />
                         )}
                         <div className="cta-action">
-                            <input className="cta form-input" id="newsletter" type="email" ref={node => (email = node)} labelHidden hasIcon="right" placeholder="Your best email"/>
+                            <input className="cta form-input" id="newsletter" type="email" ref={node => (email = node)} placeholder="Your best email"/>
                             <button className="button button-primary button-wide-mobile button-sm" style={{float: "right", margin: "10px 0px 10px 10px"}} onClick={submit}>
                                 Submit
                             </button>

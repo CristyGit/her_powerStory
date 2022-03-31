@@ -4,7 +4,7 @@ function ContactHer() {
     return (
         <div className="container-contact">
             <div className="row header-center">
-                <h1 class="text-color-primary">Contact Us</h1>
+                <h1 className="text-color-primary">Contact Us</h1>
             </div>
             <div className="row header-center">
                 <h4>We'd love to hear from you!</h4>

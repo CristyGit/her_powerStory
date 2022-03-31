@@ -18,6 +18,7 @@ import Fitness from './views/Fitness';
 import AboutUs from './views/AboutUs';
 import ContactUs from './views/ContactUs';
 import Login from './views/Login';
+import Community from './views/Community';
 
 // Initialize Google Analytics
 ReactGA.initialize(process.env.REACT_APP_GA_CODE);
@@ -76,6 +77,7 @@ const App = () => {
           <AppRoute exact path="/Fitness" component={Fitness} layout={LayoutDefault} />
           <AppRoute exact path="/AboutHer" component={AboutUs} layout={LayoutDefault} />
           <AppRoute exact path="/ContactHer" component={ContactUs} layout={LayoutDefault} />
+          <AppRoute exact path="/Community" component={Community} layout={LayoutDefault} />
           <AppRoute exact path="/Login" component={Login} layout={LayoutDefault} />
         </Switch>
       )} />

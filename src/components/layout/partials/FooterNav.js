@@ -22,8 +22,12 @@ const FooterNav = ({
           <Link to="ContactHer">Contact</Link>
         </li>
         <li>
+          <Link to="Community">Community</Link>
+        </li>
+        <li>
           <Link to="AboutHer">About Her</Link>
         </li>
+        
       </ul>
     </nav>
   );
