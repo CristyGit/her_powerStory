@@ -47,12 +47,12 @@ const CustomForm = ({
             );
         
         const innerClasses = classNames(
-        'cta-inner section-inner',
-        topDivider && 'has-top-divider',
-        bottomDivider && 'has-bottom-divider',
-        split && 'cta-split'
-        );
-  
+            'cta-inner section-inner',
+            topDivider && 'has-top-divider',
+            bottomDivider && 'has-bottom-divider',
+            split && 'cta-split'
+            );
+    
         return (
             <div>
                 <section
@@ -101,12 +101,6 @@ const MailchimpForm = props => {
             <MailchimpSubscribe
                 url={url}
                 render={({ subscribe, status, message }) => (
-                    // <div>
-                    //     <SimpleForm onSubmitted={formData => subscribe(formData)} />
-                    //     {status === "sending" && <div style={{ color: "blue" }}>sending...</div>}
-                    //     {status === "error" && <div style={{ color: "red" }} dangerouslySetInnerHTML={{__html: message}}/>}
-                    //     {status === "success" && <div style={{ color: "green" }}>Subscribed !</div>}
-                    // </div>
                     <CustomForm
                         status={status}
                         message={message}
