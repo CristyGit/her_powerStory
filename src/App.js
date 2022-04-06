@@ -3,8 +3,6 @@ import { useLocation, Switch } from 'react-router-dom';
 import AppRoute from './utils/AppRoute';
 import ScrollReveal from './utils/ScrollReveal';
 import ReactGA from 'react-ga';
-// import { Security, SecureRoute } from "@okta/okta-react";
-// import { OktaAuth, toRelativeUrl } from "@okta/okta-auth-js";
 
 // Layouts
 import LayoutDefault from './layouts/LayoutDefault';
@@ -19,6 +17,9 @@ import AboutUs from './views/AboutUs';
 import ContactUs from './views/ContactUs';
 import Login from './views/Login';
 import Community from './views/Community';
+import Register from './views/Register';
+import Reset from './views/Reset';
+import Dashboard from './views/Dashboard';
 
 // Initialize Google Analytics
 ReactGA.initialize(process.env.REACT_APP_GA_CODE);
@@ -28,31 +29,7 @@ const trackPage = page => {
   ReactGA.pageview(page);
 };
 
-// const CLIENT_ID = process.env.CLIENT_ID;
-// const CALLBACK_PATH = process.env.CALLBACK_PATH;
-// const ISSUER = process.env.ISSUER;
-// const HOST = process.env.HOST;
-// const REDIRECT_URI = `http://${HOST}${CALLBACK_PATH}`;
-// const SCOPES = process.env.SCOPES;
-
-// if (!SCOPES || !CLIENT_ID || !CALLBACK_PATH || !ISSUER || !HOST) {
-//   throw new Error("All environmental variables must be set");
-// }
-
-// const config = {
-//   issuer: ISSUER,
-//   clientId: CLIENT_ID,
-//   redirectUri: REDIRECT_URI,
-//   scopes: SCOPES.split(/\s+/),
-// };
-
-// const oktaAuth = new OktaAuth(config);
-
 const App = () => {
-  // const history = useHistory();
-  // const restoreOriginalUri = async (_oktaAuth: any, originalUri: any) => {
-  //   history.replace(toRelativeUrl(originalUri || "/", window.location.origin));
-  // };
 
   const childRef = useRef();
   let location = useLocation();
@@ -79,6 +56,9 @@ const App = () => {
           <AppRoute exact path="/ContactHer" component={ContactUs} layout={LayoutDefault} />
           <AppRoute exact path="/Community" component={Community} layout={LayoutDefault} />
           <AppRoute exact path="/Login" component={Login} layout={LayoutDefault} />
+            <AppRoute exact path="/Register" component={Register} layout={LayoutDefault} />
+            <AppRoute exact path="/Reset" component={Reset} layout={LayoutDefault} />
+            <AppRoute exact path="/Dashboard" component={Dashboard} layout={LayoutDefault} />
         </Switch>
       )} />
   );
