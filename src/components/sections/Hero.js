@@ -81,12 +81,12 @@ const Hero = ({
               {randomTextAnswer1} <span className="text-color-primary">{randomTextAnswer2}</span>
             </h1>
             <div className="container-xs">
-              <p className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="400">
+              <p className="m-0 mb-32 reveal-from-bottom" style={{paddingBottom: "20px"}} data-reveal-delay="400">
                 <span className="text-color-primary">Her Power Story</span> wishes to empower women to tell their own stories, find themselves, take control, and strive for their goals.
-                </p>
+              </p>
               <div className="reveal-from-bottom" data-reveal-delay="600">
                 <ButtonGroup>
-                  <Button tag="a" color="primary" wideMobile href="#0">
+                  <Button tag="a" color="primary" wideMobile href="/Login">
                     Let's Go!
                     </Button>
                   <Button tag="a" color="dark" wideMobile href="https://github.com/HerCodingStory/her_powerStory">
