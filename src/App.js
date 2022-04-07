@@ -20,6 +20,7 @@ import Community from './views/Community';
 import Register from './views/Register';
 import Reset from './views/Reset';
 import Dashboard from './views/Dashboard';
+import Profile from './views/Profile';
 
 // Initialize Google Analytics
 ReactGA.initialize(process.env.REACT_APP_GA_CODE);
@@ -59,6 +60,7 @@ const App = () => {
             <AppRoute exact path="/Register" component={Register} layout={LayoutDefault} />
             <AppRoute exact path="/Reset" component={Reset} layout={LayoutDefault} />
             <AppRoute exact path="/Dashboard" component={Dashboard} layout={LayoutDefault} />
+            <AppRoute exact path="/Profile" component={Profile} layout={LayoutDefault} />
         </Switch>
       )} />
   );

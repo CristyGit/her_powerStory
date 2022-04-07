@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from "react";
-import { useAuthState } from "react-firebase-hooks/auth";
-import { useHistory } from "react-router-dom";
-import { auth, db, logout } from "../firebase";
-import { query, collection, getDocs, where } from "firebase/firestore";
+import React, {useEffect, useState} from 'react';
+import {useAuthState} from "react-firebase-hooks/auth";
+import {auth, db} from "../firebase";
+import {useHistory} from "react-router-dom";
+import {collection, getDocs, query, where} from "firebase/firestore";
 
-function Dashboard() {
+function Profile() {
     const [user, loading, error] = useAuthState(auth);
     const [name, setName] = useState("");
     const navigate = useHistory();
@@ -33,4 +33,5 @@ function Dashboard() {
         </div>
     );
 }
-export default Dashboard;
+
+export default Profile;

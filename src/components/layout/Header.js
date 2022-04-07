@@ -3,6 +3,12 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import { Link } from 'react-router-dom';
 import Logo from './partials/Logo';
+import ProfileIcon from './partials/ProfileIcon';
+import {logout} from "../../firebase";
+import {
+  getAuth,
+  onAuthStateChanged
+} from "firebase/auth";
 
 const propTypes = {
   navPosition: PropTypes.string,
@@ -34,9 +40,14 @@ const Header = ({
 
   const nav = useRef(null);
   const hamburger = useRef(null);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   useEffect(() => {
     isActive && openMenu();
+    const auth = getAuth();
+    onAuthStateChanged(auth, (user) => {
+      setIsLoggedIn(!!user);
+    });
     document.addEventListener('keydown', keyPress);
     document.addEventListener('click', clickOutside);
     return () => {
@@ -86,6 +97,7 @@ const Header = ({
             bottomDivider && 'has-bottom-divider'
           )}>
           <Logo />
+          {isLoggedIn && <ProfileIcon />}
           {!hideNav &&
             <>
               <button
@@ -133,21 +145,13 @@ const Header = ({
                       <Link to="/Fitness" onClick={closeMenu}>Fitness</Link>
                     </li>
                   </ul>
-                  <ul className={
-                    classNames(
-                      'list-reset text-xs',
-                      navPosition && `header-nav-${navPosition}`
-                    )}>
-                    <li>
-                      <Link to="/Coding" onClick={closeMenu}>Coding</Link>
-                    </li>
-                  </ul>
                   {!hideSignin &&
                     <ul
                       className="list-reset header-nav-right"
                     >
                       <li>
-                        <Link to="/Login" className="button button-primary button-wide-mobile button-sm" onClick={closeMenu}>Login</Link>
+                        {isLoggedIn && <Link to="/" className="button button-primary button-wide-mobile button-sm" onClick={logout}>Logout</Link>}
+                        {!isLoggedIn && <Link to="/Login" className="button button-primary button-wide-mobile button-sm" onClick={closeMenu}>Login</Link>}
                       </li>
                     </ul>}
                 </div>
