@@ -77,7 +77,7 @@ const Hero = ({
       <div className="container-sm">
         <div className={innerClasses}>
           <div className="hero-content">
-            <h2 style={{color: "pink", background: "white"}}>This Website in currently under construction </h2>
+            <h2 style={{color: "pink", background: "white"}}>This Website is currently under construction </h2>
             <h1 className="mt-0 mb-16 reveal-from-bottom" data-reveal-delay="200">
               {randomTextAnswer1} <span className="text-color-primary">{randomTextAnswer2}</span>
             </h1>
