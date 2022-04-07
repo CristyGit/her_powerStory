@@ -25,7 +25,7 @@ function Register() {
 
     return (
         <div className="register">
-            <div className="register__container">
+            <div className="register__container cta-inner section-inner">
                 <input
                     type="text"
                     className="register__textBox"
@@ -56,7 +56,7 @@ function Register() {
                 >
                     Register with Google
                 </button>
-                <div>
+                <div className="register__text">
                     Already have an account? <Link to="/Login">Login</Link> now.
                 </div>
             </div>

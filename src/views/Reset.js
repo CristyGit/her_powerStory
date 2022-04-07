@@ -16,7 +16,7 @@ function Reset() {
 
     return (
         <div className="reset">
-            <div className="reset__container">
+            <div className="reset__container cta-inner section-inner">
                 <input
                     type="text"
                     className="reset__textBox"
@@ -30,7 +30,7 @@ function Reset() {
                 >
                     Send password reset email
                 </button>
-                <div>
+                <div className="reset__text">
                     Don't have an account? <Link to="/Register">Register</Link> now.
                 </div>
             </div>

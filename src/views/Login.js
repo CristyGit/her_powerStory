@@ -19,13 +19,13 @@ function Login() {
 
   return (
       <div className="login">
-        <div className="login__container">
+        <div className="login__container cta-inner section-inner">
           <input
               type="text"
               className="login__textBox"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              placeholder="E-mail Address"
+              placeholder="Email"
           />
           <input
               type="password"
@@ -43,11 +43,11 @@ function Login() {
           <button className="login__btn login__google" onClick={signInWithGoogle}>
             Login with Google
           </button>
-          <div>
+          <div className="login__forgot">
             <Link to="/Reset">Forgot Password</Link>
           </div>
           <div>
-            Don't have an account? <Link to="/Register">Register</Link> now.
+            <p className="login__text">Don't have an account? <Link to="/Register">Register</Link> now.</p>
           </div>
         </div>
       </div>
