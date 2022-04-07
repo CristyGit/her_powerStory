@@ -22,7 +22,7 @@ function Reset() {
                     className="reset__textBox"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    placeholder="E-mail Address"
+                    placeholder="Email"
                 />
                 <button
                     className="reset__btn"

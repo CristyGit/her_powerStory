@@ -38,7 +38,7 @@ function Register() {
                     className="register__textBox"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    placeholder="E-mail Address"
+                    placeholder="Email"
                 />
                 <input
                     type="password"
