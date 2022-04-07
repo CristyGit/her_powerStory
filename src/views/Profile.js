@@ -29,7 +29,10 @@ function Profile() {
 
     return (
         <div className="dashboard">
-
+            <div>
+                <h1>{name}</h1>
+                <h2>{user?.email}</h2>
+            </div>
         </div>
     );
 }
