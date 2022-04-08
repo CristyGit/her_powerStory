@@ -6,7 +6,8 @@ import {
     signInWithEmailAndPassword,
     createUserWithEmailAndPassword,
     sendPasswordResetEmail,
-    signOut,
+    signOut, onAuthStateChanged,
+    updateProfile
 } from "firebase/auth";
 import {
     getFirestore,
@@ -16,6 +17,8 @@ import {
     where,
     addDoc,
 } from "firebase/firestore";
+import { getStorage, ref, uploadBytes, getDownloadURL } from "firebase/storage";
+import {useEffect, useState} from "react";
 
 const firebaseConfig = {
     apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
@@ -29,6 +32,7 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const db = getFirestore(app);
+const storage = getStorage();
 const googleProvider = new GoogleAuthProvider();
 const signInWithGoogle = async () => {
     try {
@@ -84,6 +88,18 @@ const sendPasswordReset = async (email) => {
 const logout = () => {
     signOut(auth);
 };
+
+export function useAuth() {
+    const [currentUser, setCurrentUser] = useState();
+
+    useEffect(() => {
+        const unsub = onAuthStateChanged(auth, user => setCurrentUser(user));
+        return unsub;
+    }, [])
+
+    return currentUser;
+}
+
 export {
     auth,
     db,
@@ -93,3 +109,18 @@ export {
     sendPasswordReset,
     logout,
 };
+
+// Storage
+export async function upload(file, currentUser, setloading) {
+    const fileRef = ref(storage, currentUser.uid + '.png');
+
+    setloading(true)
+    const snapshot = await uploadBytes(fileRef, file);
+
+    const photoURL = await getDownloadURL(fileRef);
+
+    updateProfile(currentUser, {photoURL});
+
+    setloading(false);
+    alert('Uploaded file!');
+}
