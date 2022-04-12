@@ -97,7 +97,6 @@ const Header = ({
             bottomDivider && 'has-bottom-divider'
           )}>
           <Logo />
-          {isLoggedIn && <ProfileIcon />}
           {!hideNav &&
             <>
               <button
@@ -149,6 +148,7 @@ const Header = ({
                     <ul
                       className="list-reset header-nav-right"
                     >
+                      {isLoggedIn && <ProfileIcon />}
                       <li>
                         {isLoggedIn && <Link to="/" className="button button-primary button-wide-mobile button-sm" onClick={logout}>Logout</Link>}
                         {!isLoggedIn && <Link to="/Login" className="button button-primary button-wide-mobile button-sm" onClick={closeMenu}>Login</Link>}
