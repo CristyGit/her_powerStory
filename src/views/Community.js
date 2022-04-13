@@ -1,11 +1,11 @@
 import React from 'react';
 
-import Travel from '../components/sections/Travel';
+import CommunitySplit from '../components/sections/CommunitySplit';
 
 const Community = () => {
 
   return (
-    <Travel />
+    <CommunitySplit />
   );
 }
 

@@ -47,9 +47,9 @@ function AboutHer() {
                     <li>
                         <a href="https://www.facebook.com/groups/934693543870816/" target="_blank">Facebook</a>
                     </li>
-                    <li>
-                        <a href="https://www.youtube.com/channel/UCMKIuaoOLkzTm_VuG6hC0bQ" target="_blank">Youtube</a>
-                    </li>
+                    {/*<li>*/}
+                    {/*    <a href="https://www.youtube.com/channel/UCMKIuaoOLkzTm_VuG6hC0bQ" target="_blank">Youtube</a>*/}
+                    {/*</li>*/}
                     <li>
                         <a href="https://discord.gg/dCM2zaWc" target="_blank">Discord</a>
                     </li>
