@@ -1,6 +1,8 @@
 # Her Power Story
 
-HPS is a web application that empowers women to follow their passions, guides them through self-discovery, and offers them opportunties for improvement. I'm currently using React, NodeJs, EmailJS API, Mailchimp API, and Google Firebase (Firestore DB, Hosting, and Authentication).
+HPS is a web application that empowers women to follow their passions, guides them through self-discovery, and offers them opportunities for self-improvement.
+
+https://herpowerstory.com/
 
 ## Plans & Features
 
@@ -45,7 +47,3 @@ Phase 2:
  - MailChimp API
 
 ## Architecture
-
-## Deployment
-
-- https://herpowerstory.com/
