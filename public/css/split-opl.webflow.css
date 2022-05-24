@@ -97,7 +97,7 @@ a {
 
 .rightcontent {
   overflow: auto;
-  padding: 120px;
+  padding: 10px 100px 100px 100px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
