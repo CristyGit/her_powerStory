@@ -6,7 +6,7 @@ import SectionHeader from "./partials/SectionHeader";
 function Destinations() {
     const [content, setContent] = useState("");
     const sectionHeader = {
-        title: 'Destinations Goal',
+        title: 'Destination Goals',
         paragraph: 'These are the countries that I have being. My goal is to get to 30 countries (~15% of the world) before the age of 30. Right now I only have 3% (8 countries)'
     };
 
