@@ -15,7 +15,7 @@ function Reset() {
     }, [user, loading]);
 
     return (
-        <div className="reset">
+        <div className="reset reveal-from-bottom">
             <div className="reset__container cta-inner section-inner">
                 <input
                     type="text"

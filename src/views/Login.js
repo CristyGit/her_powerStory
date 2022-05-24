@@ -18,7 +18,7 @@ function Login() {
   }, [user, loading]);
 
   return (
-      <div className="login">
+      <div className="login reveal-from-bottom">
         <div className="login__container cta-inner section-inner">
           <input
               type="text"

@@ -24,7 +24,7 @@ function Register() {
     }, [user, loading]);
 
     return (
-        <div className="register">
+        <div className="register reveal-from-bottom">
             <div className="register__container cta-inner section-inner">
                 <input
                     type="text"

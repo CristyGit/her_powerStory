@@ -25,7 +25,7 @@ const ContactHer = () => {
     };
 
     return (
-        <div className="container">
+        <div className="container reveal-from-right">
             <form className="container-contact" ref={form} onSubmit={sendEmail} id={form}>
                 <div className="row header-center">
                     <h1 className="text-color-primary">Contact Us</h1>
