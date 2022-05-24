@@ -1,11 +1,19 @@
 import React from 'react';
 
-import Travel from '../components/sections/Travel';
+import Finance from '../components/sections/Finance';
+import RecentPostMoney from "../components/sections/RecentPostMoney";
+import FinancialsGoals from "../components/sections/FinancialGoals";
+import FinanceApp from "../components/sections/FinanceApp";
 
 const Money = () => {
 
   return (
-    <Travel />
+      <>
+        <Finance />
+        <RecentPostMoney />
+        <FinancialsGoals />
+        <FinanceApp />
+      </>
   );
 }
 
