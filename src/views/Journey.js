@@ -3,7 +3,7 @@ import React from 'react';
 import Travel from '../components/sections/Travel';
 import RecentPost from '../components/sections/RecentPost';
 import Destinations from '../components/sections/Destinations';
-import Adventures from '../components/sections/Adventures';
+import Resources from '../components/sections/Resources';
 import TravelApp from '../components/sections/TravelApp';
 
 const Journey = () => {
@@ -13,7 +13,7 @@ const Journey = () => {
         <Travel />
         <RecentPost />
         <Destinations />
-        {/*<Adventures />*/}
+        {/*<Resources />*/}
         <TravelApp />
       </>
   );
