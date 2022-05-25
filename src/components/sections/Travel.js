@@ -23,6 +23,9 @@ function Travel() {
               <Button className="reveal-from-bottom" tag="a" color="white" style={{margin: "10px"}} wideMobile href="">
                   Travel Money Hacks <FcSalesPerformance />
               </Button>
+              <Button className="reveal-from-bottom" tag="a" color="white" style={{margin: "10px"}} wideMobile href="" >
+                  Resources <FcBinoculars />
+              </Button>
               <Button className="reveal-from-bottom" tag="a" color="white" style={{margin: "10px"}} wideMobile href="">
                   Travel App <FcPhoneAndroid />
               </Button>
