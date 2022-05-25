@@ -98,7 +98,7 @@ const Hero = ({
             </div>
           </div>
           <div className="hero-figure reveal-from-bottom illustration-element-01" data-reveal-value="20px" data-reveal-delay="800">
-            <YoutubeEmbed embedId="COQqd8u4KS0" />
+            <YoutubeEmbed embedId="wM82hE6oimw" />
           </div>
         </div>
       </div>
