@@ -37,7 +37,7 @@ function Travel() {
                 <div className="tiles-item-inner">
                     <div className="features-tiles-item-header">
                         <div className="features-tiles-item-image mb-16">
-                            <a href="https://www.instagram.com/her_journeystory/" target="_blank"><img src="images/hts.jpg" alt="@her_journeystory" style={{borderRadius: "50%", width: "100px"}} /></a>
+                            <a href="https://www.instagram.com/her_journeystory/" target="_blank" rel="noopener noreferrer"><img src="images/hts.jpg" alt="@her_journeystory" style={{borderRadius: "50%", width: "100px"}} /></a>
                         </div>
                     </div>
                     <div className="features-tiles-item-content">
@@ -55,7 +55,7 @@ function Travel() {
                 <div className="tiles-item-inner">
                     <div className="features-tiles-item-header">
                         <div className="features-tiles-item-image mb-16">
-                            <a href="https://www.instagram.com/her_moneystory/" target="_blank"><img src="images/hms.jpg" alt="@her_moneystory" style={{borderRadius: "50%", width: "100px"}} /></a>
+                            <a href="https://www.instagram.com/her_moneystory/" target="_blank" rel="noopener noreferrer"><img src="images/hms.jpg" alt="@her_moneystory" style={{borderRadius: "50%", width: "100px"}} /></a>
                         </div>
                     </div>
                     <div className="features-tiles-item-content">
