@@ -3,9 +3,6 @@ import classNames from 'classnames';
 import { SectionProps } from '../../utils/SectionProps';
 import ButtonGroup from '../elements/ButtonGroup';
 import Button from '../elements/Button';
-import Image from '../elements/Image';
-import Modal from '../elements/Modal';
-import ReactPlayer from "react-player"
 import YoutubeEmbed from "./YoutubeEmbed";
 
 const propTypes = {

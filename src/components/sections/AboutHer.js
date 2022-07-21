@@ -29,10 +29,10 @@ function AboutHer() {
                     <div className="text-block-2">Connect</div>
                     <ul role="list" className="list w-list-unstyled">
                     <li>
-                        <a href="https://www.linkedin.com/in/cristina-villarroel/" target="_blank">LinkedIn</a>
+                        <a href="https://www.linkedin.com/in/cristina-villarroel/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                     </li>
                     <li>
-                        <a href="https://github.com/HerCodingStory" target="_blank">Github</a>
+                        <a href="https://github.com/HerCodingStory" target="_blank" rel="noopener noreferrer">Github</a>
                     </li>
                     <li>
                         <a href="hercodingstory@gmail.com" target="_blank">Email</a>
@@ -43,13 +43,13 @@ function AboutHer() {
                     <div className="text-block-2">Social</div>
                     <ul role="list" className="list w-list-unstyled">
                     <li>
-                        <a href="https://www.instagram.com/tazcrispy/" target="_blank">Instagram</a>
+                        <a href="https://www.instagram.com/tazcrispy/" target="_blank" rel="noopener noreferrer">Instagram</a>
                     </li>
                     <li>
-                        <a href="https://twitter.com/tazcrispy" target="_blank">Twitter</a>
+                        <a href="https://twitter.com/tazcrispy" target="_blank" rel="noopener noreferrer">Twitter</a>
                     </li>
                     <li>
-                        <a href="https://www.tiktok.com/@tazcrispy" target="_blank">TikTok</a>
+                        <a href="https://www.tiktok.com/@tazcrispy" target="_blank" rel="noopener noreferrer">TikTok</a>
                     </li>
                     </ul>
                 </div>
@@ -57,13 +57,13 @@ function AboutHer() {
                     <div className="text-block-2">HPS Network</div>
                     <ul role="list" className="list w-list-unstyled">
                     <li>
-                        <a href="https://www.facebook.com/groups/934693543870816/" target="_blank">Facebook</a>
+                        <a href="https://www.facebook.com/groups/934693543870816/" target="_blank" rel="noopener noreferrer">Facebook</a>
                     </li>
                     {/*<li>*/}
-                    {/*    <a href="https://www.youtube.com/channel/UCMKIuaoOLkzTm_VuG6hC0bQ" target="_blank">Youtube</a>*/}
+                    {/*    <a href="https://www.youtube.com/channel/UCMKIuaoOLkzTm_VuG6hC0bQ" target="_blank" rel="noopener noreferrer">Youtube</a>*/}
                     {/*</li>*/}
                     <li>
-                        <a href="https://discord.gg/dCM2zaWc" target="_blank">Discord</a>
+                        <a href="https://discord.gg/dCM2zaWc" target="_blank" rel="noopener noreferrer">Discord</a>
                     </li>
                     </ul>
                 </div>

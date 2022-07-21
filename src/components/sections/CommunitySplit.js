@@ -62,7 +62,7 @@ const CommunitySplit = ({
                 <div className="tiles-item-inner">
                   <div className="features-tiles-item-header">
                     <div className="features-tiles-item-image mb-16">
-                      <a href="https://www.facebook.com/groups/934693543870816/" target="_blank">
+                      <a href="https://www.facebook.com/groups/934693543870816/" target="_blank" rel="noopener noreferrer">
                         <Image
                             src={require('./../../assets/images/facebook.png')}
                             alt="Features tile icon 03"
@@ -102,7 +102,7 @@ const CommunitySplit = ({
                 <div className="tiles-item-inner">
                   <div className="features-tiles-item-header">
                     <div className="features-tiles-item-image mb-16">
-                      <a href="https://discord.gg/dCM2zaWc" target="_blank">
+                      <a href="https://discord.gg/dCM2zaWc" target="_blank" rel="noopener noreferrer">
                         <Image
                             src={require('./../../assets/images/discord.png')}
                             alt="Features tile icon 02"
