@@ -2,6 +2,8 @@ import React from "react";
 import { FcBinoculars } from "react-icons/fc";
 import { FcSalesPerformance } from "react-icons/fc";
 import { FcPhoneAndroid } from "react-icons/fc";
+import { FcPlanner } from "react-icons/fc";
+import { FcGlobe } from "react-icons/fc";
 import Button from "../elements/Button";
 import SectionHeader from "./partials/SectionHeader";
 
@@ -20,14 +22,17 @@ function Travel() {
               <Button className="reveal-from-bottom" tag="a" color="white" style={{margin: "10px"}} wideMobile href="" >
                   Adventure Seeker <FcBinoculars />
               </Button>
+              <Button className="reveal-from-bottom" tag="a" color="white" style={{margin: "10px"}} wideMobile href="" >
+                  Ultimate Planning <FcPlanner />
+              </Button>
               <Button className="reveal-from-bottom" tag="a" color="white" style={{margin: "10px"}} wideMobile href="">
                   Travel Money Hacks <FcSalesPerformance />
               </Button>
               <Button className="reveal-from-bottom" tag="a" color="white" style={{margin: "10px"}} wideMobile href="" >
-                  Resources <FcBinoculars />
+                  Been Map <FcGlobe />
               </Button>
               <Button className="reveal-from-bottom" tag="a" color="white" style={{margin: "10px"}} wideMobile href="">
-                  Travel App <FcPhoneAndroid />
+                  Resources <FcPhoneAndroid />
               </Button>
           </div>
         </div>

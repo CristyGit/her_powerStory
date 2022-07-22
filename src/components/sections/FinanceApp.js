@@ -4,7 +4,7 @@ import Image from "../elements/Image";
 
 function FinanceApp() {
     const sectionHeader = {
-        title: 'Her Money App',
+        title: 'HerMoney',
         paragraph: 'This app allows you to keep your financials in check by providing sheets, information and resources.'
     };
 

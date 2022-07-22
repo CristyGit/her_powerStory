@@ -15,8 +15,9 @@ Phase 1:
  - Pages:
    - Home
    - **Dashboard**
-   - **Journey**
-   - **Money**
+   - **Travel**
+   - **Finance**
+   - **Tech**
    - **Fitness**
    - Login, Forgot PWD & Registration
    - Profile
@@ -29,7 +30,7 @@ Phase 2:
      - KnowHer
      - EmpowerHer Tree
      - HerGoal Keeper
-     - Money Management App
+     - Finance Management App
      - Travel App
      - Fitness App
 

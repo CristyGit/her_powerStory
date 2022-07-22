@@ -9,6 +9,10 @@ import {
   getAuth,
   onAuthStateChanged
 } from "firebase/auth";
+import { IconContext } from 'react-icons';
+import * as FaIcons from 'react-icons/fa';
+import * as AiIcons from 'react-icons/ai';
+import {SideNav} from './SideNav';
 
 const propTypes = {
   navPosition: PropTypes.string,
@@ -85,6 +89,10 @@ const Header = ({
     className
   );
 
+  const [sidebar, setSidebar] = useState(false);
+
+  const showSidebar = () => setSidebar(!sidebar);
+
   return (
     <header
       {...props}
@@ -96,19 +104,35 @@ const Header = ({
             'site-header-inner',
             bottomDivider && 'has-bottom-divider'
           )}>
+          {isLoggedIn && <IconContext.Provider value={{ color: '#fff' }}>
+            <div className='navbar'>
+              <Link to='#' className='menu-bars'>
+                <FaIcons.FaBars onClick={showSidebar} />
+              </Link>
+            </div>
+            <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
+              <ul className='nav-menu-items' onClick={showSidebar}>
+                <li className='navbar-toggle'>
+                  <Link to='#' className='menu-bars'>
+                    <AiIcons.AiOutlineClose />
+                  </Link>
+                </li>
+                {SideNav.map((item, index) => {
+                  return (
+                      <li key={index} className={item.cName}>
+                        <Link to={item.path}>
+                          {item.icon}
+                          <span>{item.title}</span>
+                        </Link>
+                      </li>
+                  );
+                })}
+              </ul>
+            </nav>
+          </IconContext.Provider>}
           <Logo />
           {!hideNav &&
             <>
-              <button
-                ref={hamburger}
-                className="header-nav-toggle"
-                onClick={isActive ? closeMenu : openMenu}
-              >
-                <span className="screen-reader">Menu</span>
-                <span className="hamburger">
-                  <span className="hamburger-inner"></span>
-                </span>
-              </button>
               <nav
                 ref={nav}
                 className={
@@ -117,33 +141,42 @@ const Header = ({
                     isActive && 'is-active'
                   )}>
                 <div className="header-nav-inner">
-                  <ul className={
+                  {!isLoggedIn &&<ul className={
                     classNames(
                       'list-reset text-xs',
                       navPosition && `header-nav-${navPosition}`
                     )}>
                     <li>
-                      <Link to="/Journey" onClick={closeMenu}>Journey</Link>
+                      <Link to="/TravelOut" onClick={closeMenu}>Travel</Link>
                     </li>
-                  </ul>
-                  <ul className={
+                  </ul>}
+                  {!isLoggedIn && <ul className={
                     classNames(
                       'list-reset text-xs',
                       navPosition && `header-nav-${navPosition}`
                     )}>
                     <li>
-                      <Link to="/Money" onClick={closeMenu}>Money</Link>
+                      <Link to="/FinanceOut" onClick={closeMenu}>Finance</Link>
                     </li>
-                  </ul>
-                  <ul className={
+                  </ul>}
+                  {!isLoggedIn && <ul className={
+                    classNames(
+                        'list-reset text-xs',
+                        navPosition && `header-nav-${navPosition}`
+                    )}>
+                    <li>
+                      <Link to="/TechOut" onClick={closeMenu}>Tech</Link>
+                    </li>
+                  </ul>}
+                  {!isLoggedIn && <ul className={
                     classNames(
                       'list-reset text-xs',
                       navPosition && `header-nav-${navPosition}`
                     )}>
                     <li>
-                      <Link to="/Fitness" onClick={closeMenu}>Fitness</Link>
+                      <Link to="/FitnessOut" onClick={closeMenu}>Fitness</Link>
                     </li>
-                  </ul>
+                  </ul>}
                   {!hideSignin &&
                     <ul
                       className="list-reset header-nav-right"

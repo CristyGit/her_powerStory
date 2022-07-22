@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react';
 import classNames from 'classnames';
 import { Link } from 'react-router-dom';
 import Image from '../../elements/Image';
-import { useAuth } from "../../../firebase";
+import {useAuthState} from "react-firebase-hooks/auth";
+import {auth, useAuth} from "../../../firebase";
 
 const ProfileIcon = ({
                   className,

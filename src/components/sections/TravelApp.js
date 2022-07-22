@@ -4,7 +4,7 @@ import Image from "../elements/Image";
 
 function TravelApp() {
     const sectionHeader = {
-        title: 'The Journey',
+        title: 'Journey',
         paragraph: 'This app allows travelers to keep track of their traveling and experiences. It also helps you plan for future travels.'
     };
 

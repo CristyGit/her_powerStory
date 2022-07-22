@@ -9,18 +9,22 @@ import LayoutDefault from './layouts/LayoutDefault';
 
 // Views 
 import Home from './views/Home';
-import Journey from './views/Journey';
-import Coding from './views/Coding';
-import Money from './views/Money';
-import Fitness from './views/Fitness';
+import TravelOut from './views/Travel/TravelOut';
+import TravelIn from './views/Travel/TravelIn';
+import TechIn from './views/Tech/TechIn';
+import TechOut from './views/Tech/TechOut';
+import FinanceOut from './views/Finance/FinanceOut';
+import FinanceIn from './views/Finance/FinanceIn';
+import FitnessOut from './views/Fitness/FitnessOut';
+import FitnessIn from './views/Fitness/FitnessIn';
 import AboutUs from './views/AboutUs';
 import ContactUs from './views/ContactUs';
-import Login from './views/Login';
+import Login from './views/Auth/Login';
 import Community from './views/Community';
-import Register from './views/Register';
-import Reset from './views/Reset';
+import Register from './views/Auth/Register';
+import Reset from './views/Auth/Reset';
 import Dashboard from './views/Dashboard';
-import Profile from './views/Profile';
+import Profile from './views/Auth/Profile';
 import NotFound from "./views/NotFound";
 
 // Initialize Google Analytics
@@ -50,10 +54,14 @@ const App = () => {
       children={() => (
         <Switch>
           <AppRoute exact path="/" component={Home} layout={LayoutDefault} />
-          <AppRoute exact path="/Journey" component={Journey} layout={LayoutDefault} />
-          <AppRoute exact path="/Coding" component={Coding} layout={LayoutDefault} />
-          <AppRoute exact path="/Money" component={Money} layout={LayoutDefault} />
-          <AppRoute exact path="/Fitness" component={Fitness} layout={LayoutDefault} />
+          <AppRoute exact path="/TravelOut" component={TravelOut} layout={LayoutDefault} />
+            <AppRoute exact path="/TravelIn" component={TravelIn} layout={LayoutDefault} />
+          {/*  <AppRoute exact path="/TechOut" component={TechOut} layout={LayoutDefault} />*/}
+          {/*<AppRoute exact path="/TechIn" component={TechIn} layout={LayoutDefault} />*/}
+          <AppRoute exact path="/FinanceOut" component={FinanceOut} layout={LayoutDefault} />
+            {/*<AppRoute exact path="/FinanceIn" component={FinanceIn} layout={LayoutDefault} />*/}
+          {/*<AppRoute exact path="/FitnessOut" component={FitnessOut} layout={LayoutDefault} />*/}
+            {/*<AppRoute exact path="/FitnessIn" component={FitnessIn} layout={LayoutDefault} />*/}
           <AppRoute exact path="/AboutHer" component={AboutUs} layout={LayoutDefault} />
           <AppRoute exact path="/ContactHer" component={ContactUs} layout={LayoutDefault} />
           <AppRoute exact path="/Community" component={Community} layout={LayoutDefault} />
