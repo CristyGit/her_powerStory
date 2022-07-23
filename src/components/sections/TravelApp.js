@@ -10,7 +10,7 @@ function TravelApp() {
 
     return (
         <div className="container center-content has-top-divider reveal-from-right" style={{marginTop: "100px"}}>
-            <h2 style={{color: "pink", background: "white", display: "inline-block"}}>This App is currently under construction </h2>
+            <h2 style={{color: "pink", background: "white", display: "inline-block"}}>This App is Under Construction </h2>
             <SectionHeader data={sectionHeader} className="center-content" />
             <Image
                 src={require('./../../assets/images/ia.png')}

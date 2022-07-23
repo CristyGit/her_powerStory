@@ -16,7 +16,7 @@ function Finance() {
 
   return (
       <div>
-        <div className="bgimg-2 w3-display-container w3-grayscale-min" id="home">
+        <div className="bgimg-2 w3-display-container" id="home">
           <div style={{padding: "48px", float: "left", paddingTop: "200px", paddingLeft: "150px", display: "inline-grid"}}>
               <Button className="reveal-from-bottom" tag="a" color="dark" style={{margin: "10px"}} wideMobile href="">
                   Finance Literacy <FcSalesPerformance />

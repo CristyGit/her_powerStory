@@ -58,7 +58,7 @@ const App = () => {
             <AppRoute exact path="/TravelIn" component={TravelIn} layout={LayoutDefault} />
           {/*  <AppRoute exact path="/TechOut" component={TechOut} layout={LayoutDefault} />*/}
           {/*<AppRoute exact path="/TechIn" component={TechIn} layout={LayoutDefault} />*/}
-          <AppRoute exact path="/FinanceOut" component={FinanceOut} layout={LayoutDefault} />
+          {/*<AppRoute exact path="/FinanceOut" component={FinanceOut} layout={LayoutDefault} />*/}
             {/*<AppRoute exact path="/FinanceIn" component={FinanceIn} layout={LayoutDefault} />*/}
           {/*<AppRoute exact path="/FitnessOut" component={FitnessOut} layout={LayoutDefault} />*/}
             {/*<AppRoute exact path="/FitnessIn" component={FitnessIn} layout={LayoutDefault} />*/}

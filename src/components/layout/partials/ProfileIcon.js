@@ -34,7 +34,7 @@ const ProfileIcon = ({
                     <Image
                         src={photoURL}
                         alt="Avatar"
-                        style={{"border-radius": "50%"}}
+                        style={{borderRadius: "50%"}}
                         width={50}
                         height={50} />
                 </Link>

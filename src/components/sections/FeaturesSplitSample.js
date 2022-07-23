@@ -12,7 +12,7 @@ const defaultProps = {
   ...SectionSplitProps.defaults
 }
 
-const FeaturesSplit = ({
+const FeaturesSplitSample = ({
   className,
   topOuterDivider,
   bottomOuterDivider,
@@ -50,14 +50,14 @@ const FeaturesSplit = ({
   );
 
   const sectionHeader = {
-    title: 'Workflow that just works',
+    title: 'HPS Travel Applications',
     paragraph: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum — semper quis lectus nulla at volutpat diam ut venenatis.'
   };
 
   return (
     <section
       {...props}
-      className={outerClasses}
+      className={outerClasses} style={{paddingTop: "0px"}}
     >
       <div className="container">
         <div className={innerClasses}>
@@ -67,10 +67,10 @@ const FeaturesSplit = ({
             <div className="split-item">
               <div className="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item">
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                  Self-Love Activities
+                  Story Tellers
                   </div>
                 <h3 className="mt-0 mb-12">
-                  KnowHer
+                  Adventure Seeker
                   </h3>
                 <p className="m-0">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua — Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -93,10 +93,10 @@ const FeaturesSplit = ({
             <div className="split-item">
               <div className="split-item-content center-content-mobile reveal-from-right" data-reveal-container=".split-item">
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                  Family Tree Creator
+                  Vacation Tracker
                   </div>
                 <h3 className="mt-0 mb-12">
-                  EmpowerHer Tree
+                  Ultimate Travel Planner
                   </h3>
                 <p className="m-0">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua — Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -119,10 +119,10 @@ const FeaturesSplit = ({
             <div className="split-item">
               <div className="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item">
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                  Goal Tracker
+                  Destination goals
                   </div>
                 <h3 className="mt-0 mb-12">
-                  HerGoal Keeper
+                  HerWorld Map
                   </h3>
                 <p className="m-0">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua — Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -135,36 +135,10 @@ const FeaturesSplit = ({
                 )}
                 data-reveal-container=".split-item">
                 <Image
-                  src={require('./../../assets/images/features-split-image-03.png')}
+                  src={require('./../../assets/images/test.PNG')}
                   alt="Features split 03"
                   width={528}
                   height={396} />
-              </div>
-            </div>
-
-            <div className="split-item">
-              <div className="split-item-content center-content-mobile reveal-from-right" data-reveal-container=".split-item">
-                <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                  Stories
-                </div>
-                <h3 className="mt-0 mb-12">
-                  Her Power Stories
-                </h3>
-                <p className="m-0">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua — Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-              </div>
-              <div className={
-                classNames(
-                    'split-item-image center-content-mobile reveal-from-bottom',
-                    imageFill && 'split-item-image-fill'
-                )}
-                   data-reveal-container=".split-item">
-                <Image
-                    src={require('./../../assets/images/features-split-image-02.png')}
-                    alt="Features split 02"
-                    width={528}
-                    height={396} />
               </div>
             </div>
 
@@ -175,7 +149,7 @@ const FeaturesSplit = ({
   );
 }
 
-FeaturesSplit.propTypes = propTypes;
-FeaturesSplit.defaultProps = defaultProps;
+FeaturesSplitSample.propTypes = propTypes;
+FeaturesSplitSample.defaultProps = defaultProps;
 
-export default FeaturesSplit;
+export default FeaturesSplitSample;
